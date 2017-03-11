@@ -1,0 +1,13 @@
+Do What The Fuck You Want To Public License version 2 (LICENSE.WTFPL):
+* .gitignore
+* config/.gitkeep
+* engine/main_addons/.gitkeep
+* LICENSE
+* package.json
+* README.md
+* sounds/LICENSE
+* textures/LICENSE
+
+GNU General Public License version 3 or later (LICENSE.GPL3):
+* engine/font.ttf (Unifont font by GNU)
+* All other files

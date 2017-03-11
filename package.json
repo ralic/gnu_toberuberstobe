@@ -1,0 +1,14 @@
+{
+	"name": "ToberUberStobe",
+	"version": "v4",
+	
+	"main": "game.html",
+	
+	"window": {
+		"title": "ToberUberStobe",
+		"icon": "textures/gui/logo.png",
+		
+		"max_width": 16384,
+		"max_height": 16384
+	}
+}
