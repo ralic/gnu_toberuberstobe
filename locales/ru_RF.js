@@ -111,9 +111,9 @@ game.locales["Activate an easter egg, please"] = {
 				
 				//Achievements
 					gui_gameWorld_dairy_achievements_completed:
-						"Полный :)",
+						"Полный 🙂",
 					gui_gameWorld_dairy_achievements_uncompleted:
-						"Отполный :(",
+						"Отполный 🙁",
 					
 					gui_gameWorld_achievements_food_title:
 						"Провизия",
@@ -139,6 +139,11 @@ game.locales["Activate an easter egg, please"] = {
 						"Огородник",
 					gui_gameWorld_achievements_gardener_whatToDo:
 						"Обрыв подстрекать агрегат",
+					
+					gui_gameWorld_achievements_indyJones_title:
+						"Инди Джонс",
+					gui_gameWorld_achievements_indyJones_whatToDo:
+						"Сесть 25000 квалификация",
 		
 		//Multiplayer gate
 			gui_multiplayerGate_title:

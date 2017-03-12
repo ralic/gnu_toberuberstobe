@@ -111,9 +111,9 @@ game.locales.ja_JP = {
 				
 				//Achievements
 					gui_gameWorld_dairy_achievements_completed:
-						"完成した :)",
+						"完成した 🙂",
 					gui_gameWorld_dairy_achievements_uncompleted:
-						"完了していない :(",
+						"完了していない 🙁",
 					
 					gui_gameWorld_achievements_food_title:
 						"食品",
@@ -139,6 +139,11 @@ game.locales.ja_JP = {
 						"庭師",
 					gui_gameWorld_achievements_gardener_whatToDo:
 						"ナスを壊す",
+					
+					gui_gameWorld_achievements_indyJones_title:
+						"イン・ジョ",
+					gui_gameWorld_achievements_indyJones_whatToDo:
+						"25000の経験を得る",
 		
 		//Multiplayer gate
 			gui_multiplayerGate_title:

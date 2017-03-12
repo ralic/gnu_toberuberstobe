@@ -111,9 +111,9 @@ game.locales.en_US = {
 				
 				//Achievements
 					gui_gameWorld_dairy_achievements_completed:
-						"Completed :)",
+						"Completed 🙂",
 					gui_gameWorld_dairy_achievements_uncompleted:
-						"Uncompleted :(",
+						"Uncompleted 🙁",
 					
 					gui_gameWorld_achievements_food_title:
 						"Food",
@@ -139,6 +139,11 @@ game.locales.en_US = {
 						"Gardener",
 					gui_gameWorld_achievements_gardener_whatToDo:
 						"Break an eggplant",
+					
+					gui_gameWorld_achievements_indyJones_title:
+						"Indy Jones",
+					gui_gameWorld_achievements_indyJones_whatToDo:
+						"Get 25000 experience",
 		
 		//Multiplayer gate
 			gui_multiplayerGate_title:

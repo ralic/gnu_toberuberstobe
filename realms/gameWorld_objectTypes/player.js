@@ -12,6 +12,10 @@
 
 game.realms.gameWorld.objectTypes.player = {
 	update: function(object, x, y) {
+		if (object.experience >= 25000) {
+			object.achievements.indyJones = null;
+		}
+		
 		if (!object.isGod) {
 			object.hunger -=
 				this.indicatorsData.reduction.onStay.hunger;

@@ -111,9 +111,9 @@ game.locales.ru_RU = {
 				
 				//Achievements
 					gui_gameWorld_dairy_achievements_completed:
-						"Завершено :)",
+						"Завершено 🙂",
 					gui_gameWorld_dairy_achievements_uncompleted:
-						"Незавершено :(",
+						"Незавершено 🙁",
 					
 					gui_gameWorld_achievements_food_title:
 						"Еда",
@@ -139,6 +139,11 @@ game.locales.ru_RU = {
 						"Садовник",
 					gui_gameWorld_achievements_gardener_whatToDo:
 						"Добыть баклажан",
+					
+					gui_gameWorld_achievements_indyJones_title:
+						"Инди Джонс",
+					gui_gameWorld_achievements_indyJones_whatToDo:
+						"Добыть 25000 опыта",
 		
 		//Multiplayer gate
 			gui_multiplayerGate_title:
