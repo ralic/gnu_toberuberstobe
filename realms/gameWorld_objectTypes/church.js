@@ -21,7 +21,7 @@ game.realms.gameWorld.objectTypes.church = {
 		x: -48,
 		y: -64
 	},
-	textureOf: function(object) {
+	textureOf: function() {
 		return game.textures.blocks_church;
 	},
 	

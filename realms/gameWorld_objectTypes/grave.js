@@ -15,7 +15,7 @@ game.realms.gameWorld.objectTypes.grave = {
 		x: 0,
 		y: 0
 	},
-	textureOf: function(object) {
+	textureOf: function() {
 		return game.textures.blocks_grave;
 	},
 	

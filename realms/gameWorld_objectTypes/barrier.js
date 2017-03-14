@@ -21,7 +21,7 @@ game.realms.gameWorld.objectTypes.barrier = {
 		x: 0,
 		y: 0
 	},
-	textureOf: function(object) {
+	textureOf: function() {
 		return game.textures.blocks_barrier;
 	},
 	
