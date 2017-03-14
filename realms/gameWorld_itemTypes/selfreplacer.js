@@ -36,7 +36,7 @@ game.realms.gameWorld.itemTypes.selfreplacer = {
 		}
 	},
 	
-	textureOf: function(item) {
+	textureOf: function() {
 		return game.textures.items_selfreplacer;
 	},
 	

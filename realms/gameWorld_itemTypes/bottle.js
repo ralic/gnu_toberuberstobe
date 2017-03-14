@@ -11,7 +11,7 @@
  */
 
 game.realms.gameWorld.itemTypes.bottle = {
-	textureOf: function(item) {
+	textureOf: function() {
 		return game.textures.items_bottle;
 	},
 	

@@ -36,7 +36,7 @@ game.realms.gameWorld.itemTypes.chest = {
 		}
 	},
 	
-	textureOf: function(item) {
+	textureOf: function() {
 		return game.textures.items_chest;
 	},
 	

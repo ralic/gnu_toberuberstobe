@@ -36,7 +36,7 @@ game.realms.gameWorld.itemTypes.brickWall = {
 		}
 	},
 	
-	textureOf: function(item) {
+	textureOf: function() {
 		return game.textures.items_brickWall;
 	},
 	
