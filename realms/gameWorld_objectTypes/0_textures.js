@@ -121,6 +121,9 @@ Object.assign(game.textures, {
 		
 		blocks_grave:
 			game.loadTexture("textures/blocks/grave.png"),
+		
+		blocks_puddle:
+			game.loadTexture("textures/blocks/puddle.png"),
 	
 	//Entities
 		entities_player_down:

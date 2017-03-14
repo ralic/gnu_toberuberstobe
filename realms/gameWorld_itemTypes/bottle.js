@@ -11,6 +11,29 @@
  */
 
 game.realms.gameWorld.itemTypes.bottle = {
+	use: function(object, slot, x, y) {
+		var 
+			selectedPoint = game.realms.gameWorld.objectTypes[
+				object.type
+			].selectedPointOf(object, x, y),
+			selectedObject = game.config.list.gameWorld.objects[
+				selectedPoint.x
+			][
+				selectedPoint.y
+			];
+		
+		if (selectedObject) {
+			if (selectedObject.type == "puddle") {
+				game.sounds.items_drinksDrinking.play();
+				
+				selectedObject.health--;
+				
+				object.inventory[slot] =
+					new game.realms.gameWorld.itemTypes.waterBottle.New();
+			}
+		}
+	},
+	
 	textureOf: function() {
 		return game.textures.items_bottle;
 	},

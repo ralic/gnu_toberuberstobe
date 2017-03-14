@@ -37,6 +37,13 @@ game.realms.gameWorld.biomeTypes.oasis = {
 				game.realms.gameWorld.objectTypes.rock.New,
 			
 			chance: 0.001
+		},
+		
+		puddle: {
+			constructor:
+				game.realms.gameWorld.objectTypes.puddle.New,
+			
+			chance: 0.001875
 		}
 	},
 	
