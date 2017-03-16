@@ -1,5 +1,5 @@
 /*
- * Game world realm oasis biome type
+ * Game world realm savannah biome type
  * Copyright 2016, 2017 William Lupshenko
  * 
  * This file is a part of ToberUberStobe
@@ -10,7 +10,7 @@
  * (at your option) any later version
  */
 
-game.realms.gameWorld.biomeTypes.oasis = {
+game.realms.gameWorld.biomeTypes.savannah = {
 	backgroundTextures: [
 		"dirt",
 		"dirt_1",
