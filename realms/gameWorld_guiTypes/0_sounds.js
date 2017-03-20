@@ -13,9 +13,9 @@
 Object.assign(game.sounds, {
 	//Default
 		gui_gameWorld_default_godModeSwitching:
-			game.loadSound("sounds/gui/gameWorld_default_godModeSwitching.wav"),
+			game.loadSound("sounds/gui/gameWorld_default_godModeSwitching.ogg"),
 	
 	//Church
 		gui_gameWorld_church_praying:
-			game.loadSound("sounds/gui/gameWorld_church_praying.wav")
+			game.loadSound("sounds/gui/gameWorld_church_praying.ogg")
 });

@@ -13,13 +13,13 @@
 Object.assign(game.sounds, {
 	//Food
 		items_foodEating:
-			game.loadSound("sounds/items/foodEating.wav"),
+			game.loadSound("sounds/items/foodEating.ogg"),
 	
 	//Drinks
 		items_drinksDrinking:
-			game.loadSound("sounds/items/drinksDrinking.wav"),
+			game.loadSound("sounds/items/drinksDrinking.ogg"),
 	
 	//Other
 		items_blockPlacing:
-			game.loadSound("sounds/items/blockPlacing.wav")
+			game.loadSound("sounds/items/blockPlacing.ogg")
 });

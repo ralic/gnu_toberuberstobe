@@ -13,12 +13,12 @@
 Object.assign(game.sounds, {
 	//GUI
 		gui_click:
-			game.loadSound("sounds/gui/click.wav"),
+			game.loadSound("sounds/gui/click.ogg"),
 		gui_scroll:
-			game.loadSound("sounds/gui/scroll.wav"),
+			game.loadSound("sounds/gui/scroll.ogg"),
 		
 		gui_background:
-			game.loadSound("sounds/gui/background.wav")
+			game.loadSound("sounds/gui/background.ogg")
 });
 
 game.sounds.gui_background.loop = true;
