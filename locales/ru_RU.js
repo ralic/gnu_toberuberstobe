@@ -29,12 +29,17 @@ game.locales.ru_RU = {
 				"Авторы",
 			gui_authors_of:
 				"",
-			gui_authors_lupshenko:
-				"Lupshenko - тим лидер, кодер, звукорежиссер",
-			gui_authors_niclas232v:
-				"niclas232v - художник, гейм дизайнер",
-			gui_authors_pisosik17:
-				"pisosik17 - сделал звук отрыжки",
+			gui_authors_text: [
+				"Уильям Лупшенко (@Lupshenko)",
+				"возглавил команду; написал код;",
+				"нарисовал спрайты; записал звуки",
+				"",
+				"Николас Андерссон (@niclas232v)",
+				"разработал дизайн игры; нарисовал спрайты",
+				"",
+				"Александр Циглер (@pisosik17)",
+				"сделал звук отрыжки"
+			],
 		
 		//Settings
 			gui_settings_title:

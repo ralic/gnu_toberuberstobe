@@ -29,12 +29,17 @@ game.locales["Activate an easter egg, please"] = {
 				"Инициаторы",
 			gui_authors_of:
 				"из ",
-			gui_authors_lupshenko:
-				"Lupshenko - дирижер запряжки, шифровальщик, крепкий буссоль",
-			gui_authors_niclas232v:
-				"niclas232v - носовой фалинь, чертежник дичи",
-			gui_authors_pisosik17:
-				"pisosik17 - искусственный рыгания крепкий",
+			gui_authors_text: [
+				"Уильям Лупшенко (@Lupshenko)",
+				"светодиод артель; выражать шифровка;",
+				"дрю феи; учтённый тоны",
+				"",
+				"Nicholas Andersson (@niclas232v)",
+				"узорнил соревнование; дрю феи",
+				"",
+				"Александр Циглер (@pisosik17)",
+				"искусственный рыгания крепкий"
+			],
 		
 		//Settings
 			gui_settings_title:

@@ -29,12 +29,17 @@ game.locales.ja_JP = {
 				"著者",
 			gui_authors_of:
 				"の",
-			gui_authors_lupshenko:
-				"Lupshenkoはチームのリーダーでプログラマで音のリーダーです",
-			gui_authors_niclas232v:
-				"niclas232vは画家でゲームのデザイナーです",
-			gui_authors_pisosik17:
-				"pisosik17はげっぷの音を作りました",
+			gui_authors_text: [
+				"ウィリャム・ルップシェﾝコ (@Lupshenko)",
+				"チームを率いた；コードを書いた；",
+				"スプライトを描きました；音を録音した",
+				"",
+				"ニッカラス・アﾝダーサﾝ (@niclas232v)",
+				"私はゲームを設計した；スプライトを描きました",
+				"",
+				"アレッグザﾝダー・ツィッグラー (@pisosik17)",
+				"げっぷの音を作りました"
+			],
 		
 		//Settings
 			gui_settings_title:

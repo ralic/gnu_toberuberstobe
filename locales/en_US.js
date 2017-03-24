@@ -29,12 +29,17 @@ game.locales.en_US = {
 				"Authors",
 			gui_authors_of:
 				"of ",
-			gui_authors_lupshenko:
-				"Lupshenko - team leader, coder, sound director",
-			gui_authors_niclas232v:
-				"niclas232v - painter, game designer",
-			gui_authors_pisosik17:
-				"pisosik17 - made the burp sound",
+			gui_authors_text: [
+				"William Lupshenko (@Lupshenko)",
+				"led the team; wrote the code;",
+				"drew the sprites; recorded the sounds",
+				"",
+				"Nicholas Andersson (@niclas232v)",
+				"designed the game; drew the sprites",
+				"",
+				"Alexander Tsigler (@pisosik17)",
+				"made the burp sound"
+			],
 		
 		//Settings
 			gui_settings_title:

@@ -18,7 +18,7 @@ game.realms.authors = {
 		update: function() {
 			this.handleHotkeys();
 			
-			return [[
+			var layers = [[
 				{
 					type: "sprite",
 					
@@ -59,51 +59,31 @@ game.realms.authors = {
 					
 					x: 160,
 					y: 34
-				},
-				
-				{
-					type: "text",
-					
-					fontSize: 8,
-					fontColor:
-						game.colorScheme.text_light,
-					textAlign: "center",
-					
-					string:
-						game.curLocale.gui_authors_lupshenko,
-					
-					x: 160,
-					y: 48
-				},
-				{
-					type: "text",
-					
-					fontSize: 8,
-					fontColor:
-						game.colorScheme.text_light,
-					textAlign: "center",
-					
-					string:
-						game.curLocale.gui_authors_niclas232v,
-					
-					x: 160,
-					y: 58
-				},
-				{
-					type: "text",
-					
-					fontSize: 8,
-					fontColor:
-						game.colorScheme.text_light,
-					textAlign: "center",
-					
-					string:
-						game.curLocale.gui_authors_pisosik17,
-					
-					x: 160,
-					y: 68
 				}
 			]];
+			
+			for (
+				var i = 0;
+				i < game.curLocale.gui_authors_text.length;
+				i++
+			) {
+				layers[0].push({
+					type: "text",
+					
+					fontSize: 8,
+					fontColor:
+						game.colorScheme.text_light,
+					textAlign: "center",
+					
+					string:
+						game.curLocale.gui_authors_text[i],
+					
+					x: 160,
+					y: 48 + i * 10
+				});
+			}
+			
+			return layers;
 		},
 		
 		handleHotkeys: function() {
