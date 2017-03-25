@@ -18,7 +18,10 @@ Object.assign(game.sounds, {
 			game.loadSound("sounds/gui/scroll.ogg"),
 		
 		gui_background:
-			game.loadSound("sounds/gui/background.ogg")
+			game.loadSound("sounds/gui/background.ogg"),
+		
+		gui_gameOver:
+			game.loadSound("sounds/gui/gameOver.ogg")
 });
 
 game.sounds.gui_background.loop = true;

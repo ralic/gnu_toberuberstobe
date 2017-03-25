@@ -51,6 +51,8 @@ game.realms.gameWorld = {
 	
 	//Methods
 		fail: function() {
+			game.sounds.gui_gameOver.play();
+			
 			game.config.list.gameWorld = JSON.parse(JSON.stringify(
 				game.config.defaultList.gameWorld
 			));
