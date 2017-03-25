@@ -116,9 +116,9 @@ game.locales.ja_JP = {
 				
 				//Achievements
 					gui_gameWorld_dairy_achievements_completed:
-						"完成した 🙂",
+						"完成した",
 					gui_gameWorld_dairy_achievements_uncompleted:
-						"完了していない 🙁",
+						"完了していない",
 					
 					gui_gameWorld_achievements_food_title:
 						"食品",

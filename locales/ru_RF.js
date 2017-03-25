@@ -116,9 +116,9 @@ game.locales["Activate an easter egg, please"] = {
 				
 				//Achievements
 					gui_gameWorld_dairy_achievements_completed:
-						"Полный 🙂",
+						"Полный",
 					gui_gameWorld_dairy_achievements_uncompleted:
-						"Отполный 🙁",
+						"Отполный",
 					
 					gui_gameWorld_achievements_food_title:
 						"Провизия",

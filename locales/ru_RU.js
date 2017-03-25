@@ -116,9 +116,9 @@ game.locales.ru_RU = {
 				
 				//Achievements
 					gui_gameWorld_dairy_achievements_completed:
-						"Завершено 🙂",
+						"Завершено",
 					gui_gameWorld_dairy_achievements_uncompleted:
-						"Незавершено 🙁",
+						"Незавершено",
 					
 					gui_gameWorld_achievements_food_title:
 						"Еда",

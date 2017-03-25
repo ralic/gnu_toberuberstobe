@@ -116,9 +116,9 @@ game.locales.en_US = {
 				
 				//Achievements
 					gui_gameWorld_dairy_achievements_completed:
-						"Completed 🙂",
+						"Completed",
 					gui_gameWorld_dairy_achievements_uncompleted:
-						"Uncompleted 🙁",
+						"Uncompleted",
 					
 					gui_gameWorld_achievements_food_title:
 						"Food",
