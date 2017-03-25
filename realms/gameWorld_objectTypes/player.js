@@ -243,6 +243,10 @@ game.realms.gameWorld.objectTypes.player = {
 	}
 };
 
-Object.defineProperty(game.realms.gameWorld.objectTypes, "player", {
-	enumerable: false
-});
+Object.defineProperty(
+	game.realms.gameWorld.objectTypes, "player",
+	
+	{
+		enumerable: false
+	}
+);

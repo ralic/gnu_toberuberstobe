@@ -37,6 +37,10 @@ game.realms.gameWorld.objectTypes.grave = {
 	}
 };
 
-Object.defineProperty(game.realms.gameWorld.objectTypes, "grave", {
-	enumerable: false
-});
+Object.defineProperty(
+	game.realms.gameWorld.objectTypes, "grave",
+	
+	{
+		enumerable: false
+	}
+);
