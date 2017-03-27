@@ -15,7 +15,7 @@ game.realms.settings.controls.push([
 		type: "text",
 		
 		get string() {
-			return game.curLocale.gui_settings_controls_title;
+			return game.currentLocale.gui_settings_controls_title;
 		},
 		
 		x: 160,
@@ -28,7 +28,7 @@ game.realms.settings.controls.push([
 		type: "text",
 		
 		get string() {
-			return game.curLocale.gui_settings_controls_exit;
+			return game.currentLocale.gui_settings_controls_exit;
 		},
 		
 		x: 98,
@@ -60,7 +60,7 @@ game.realms.settings.controls.push([
 		type: "text",
 		
 		get string() {
-			return game.curLocale.gui_settings_controls_magic;
+			return game.currentLocale.gui_settings_controls_magic;
 		},
 		
 		x: 222,
@@ -92,7 +92,7 @@ game.realms.settings.controls.push([
 		type: "text",
 		
 		get string() {
-			return game.curLocale.gui_settings_controls_use;
+			return game.currentLocale.gui_settings_controls_use;
 		},
 		
 		x: 98,
@@ -124,7 +124,7 @@ game.realms.settings.controls.push([
 		type: "text",
 		
 		get string() {
-			return game.curLocale.gui_settings_controls_use2;
+			return game.currentLocale.gui_settings_controls_use2;
 		},
 		
 		x: 222,
@@ -156,7 +156,7 @@ game.realms.settings.controls.push([
 		type: "text",
 		
 		get string() {
-			return game.curLocale.gui_settings_controls_left;
+			return game.currentLocale.gui_settings_controls_left;
 		},
 		
 		x: 98,
@@ -188,7 +188,7 @@ game.realms.settings.controls.push([
 		type: "text",
 		
 		get string() {
-			return game.curLocale.gui_settings_controls_right;
+			return game.currentLocale.gui_settings_controls_right;
 		},
 		
 		x: 222,
@@ -220,7 +220,7 @@ game.realms.settings.controls.push([
 		type: "text",
 		
 		get string() {
-			return game.curLocale.gui_settings_controls_up;
+			return game.currentLocale.gui_settings_controls_up;
 		},
 		
 		x: 98,
@@ -252,7 +252,7 @@ game.realms.settings.controls.push([
 		type: "text",
 		
 		get string() {
-			return game.curLocale.gui_settings_controls_down;
+			return game.currentLocale.gui_settings_controls_down;
 		},
 		
 		x: 222,

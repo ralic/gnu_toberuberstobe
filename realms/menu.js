@@ -15,7 +15,7 @@ game.realms.menu = {
 		buttons: [
 			{
 				get caption() {
-					return game.curLocale.gui_menu_play;
+					return game.currentLocale.gui_menu_play;
 				},
 				
 				x: 100,
@@ -23,10 +23,10 @@ game.realms.menu = {
 				
 				event: function() {
 					if (game.config.list.gameWorld.objects.length != 0) {
-						game.realms.gameWorld.curGuiType =
+						game.realms.gameWorld.currentGuiType =
 							game.realms.gameWorld.guiTypes.default;
 						
-						game.curRealm =
+						game.currentRealm =
 							game.realms.gameWorld;
 						
 						game.realms.gameWorld.chunkUpdater = window.setInterval(
@@ -46,21 +46,21 @@ game.realms.menu = {
 			
 			{
 				get caption() {
-					return game.curLocale.gui_menu_multiplayer;
+					return game.currentLocale.gui_menu_multiplayer;
 				},
 				
 				x: 100,
 				y: 110,
 				
 				event: function() {
-					game.curRealm =
+					game.currentRealm =
 						game.realms.multiplayerGate;
 				}
 			},
 			
 			{
 				get caption() {
-					return game.curLocale.gui_menu_exit;
+					return game.currentLocale.gui_menu_exit;
 				},
 				
 				x: 100,
@@ -73,28 +73,28 @@ game.realms.menu = {
 			
 			{
 				get caption() {
-					return game.curLocale.gui_menu_authors;
+					return game.currentLocale.gui_menu_authors;
 				},
 				
 				x: 8,
 				y: 212,
 				
 				event: function() {
-					game.curRealm =
+					game.currentRealm =
 						game.realms.authors;
 				}
 			},
 			
 			{
 				get caption() {
-					return game.curLocale.gui_menu_settings;
+					return game.currentLocale.gui_menu_settings;
 				},
 				
 				x: 192,
 				y: 212,
 				
 				event: function() {
-					game.curRealm =
+					game.currentRealm =
 						game.realms.settings;
 				}
 			}

@@ -22,8 +22,8 @@ game.realms.gameWorld.guiTypes.dairy = {
 		get allAchievementTypes() {
 			return Object.keys(
 				game.realms.gameWorld.achievementTypes
-			).map(function(curValue) {
-				return game.realms.gameWorld.achievementTypes[curValue];
+			).map(function(currentValue) {
+				return game.realms.gameWorld.achievementTypes[currentValue];
 			});
 		},
 	
@@ -34,7 +34,7 @@ game.realms.gameWorld.guiTypes.dairy = {
 					case game.config.list.main.hotkeys.menu:
 						game.sounds.gui_click.play();
 						
-						game.realms.gameWorld.curGuiType =
+						game.realms.gameWorld.currentGuiType =
 							game.realms.gameWorld.guiTypes.default;
 						
 						break;
@@ -92,7 +92,7 @@ game.realms.gameWorld.guiTypes.dairy = {
 					textAlign: "center",
 					
 					string:
-						game.curLocale.gui_gameWorld_dairy_title,
+						game.currentLocale.gui_gameWorld_dairy_title,
 					
 					x: 160,
 					y: 68
@@ -107,7 +107,7 @@ game.realms.gameWorld.guiTypes.dairy = {
 					textAlign: "right",
 					
 					string:
-						game.curLocale.gui_settings_page +
+						game.currentLocale.gui_settings_page +
 						(this.data.selectedPage + 1) + "/" +
 						Math.ceil(this.allAchievementTypes.length / 4),
 					
@@ -208,8 +208,8 @@ game.realms.gameWorld.guiTypes.dairy = {
 								textAlign: "center",
 								
 								string: [
-									game.curLocale.gui_gameWorld_dairy_achievements_uncompleted,
-									game.curLocale.gui_gameWorld_dairy_achievements_completed
+									game.currentLocale.gui_gameWorld_dairy_achievements_uncompleted,
+									game.currentLocale.gui_gameWorld_dairy_achievements_completed
 								][+(
 									Object.keys(
 										game.realms.gameWorld.achievementTypes

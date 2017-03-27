@@ -34,7 +34,7 @@ game.realms.settings = {
 						
 						game.config.write("main");
 						
-						game.curRealm =
+						game.currentRealm =
 							game.realms.menu;
 						
 						break;
@@ -132,7 +132,7 @@ game.realms.settings = {
 					textAlign: "center",
 					
 					string:
-						game.curLocale.gui_settings_title,
+						game.currentLocale.gui_settings_title,
 					
 					x: 160,
 					y: 22
@@ -147,7 +147,7 @@ game.realms.settings = {
 					textAlign: "center",
 					
 					string:
-						game.curLocale.gui_settings_page +
+						game.currentLocale.gui_settings_page +
 						(this.selectedPage + 1) + "/" +
 						this.controls.length,
 					

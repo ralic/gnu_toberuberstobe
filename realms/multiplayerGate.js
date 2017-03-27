@@ -17,7 +17,7 @@ game.realms.multiplayerGate = {
 				type: "text",
 				
 				get string() {
-					return game.curLocale.gui_multiplayerGate_login;
+					return game.currentLocale.gui_multiplayerGate_login;
 				},
 				
 				x: 160,
@@ -49,7 +49,7 @@ game.realms.multiplayerGate = {
 				type: "text",
 				
 				get string() {
-					return game.curLocale.gui_multiplayerGate_serverIp;
+					return game.currentLocale.gui_multiplayerGate_serverIp;
 				},
 				
 				x: 160,
@@ -81,7 +81,7 @@ game.realms.multiplayerGate = {
 				type: "button",
 				
 				get caption() {
-					return game.curLocale.gui_multiplayerGate_connect;
+					return game.currentLocale.gui_multiplayerGate_connect;
 				},
 				
 				x: 100,
@@ -101,7 +101,7 @@ game.realms.multiplayerGate = {
 						if (loginData.isAllowed) {
 							game.socket.sessionId = loginData.sessionId;
 							
-							game.curRealm =
+							game.currentRealm =
 								game.realms.multiplayerWorld;
 							
 							return;
@@ -138,7 +138,7 @@ game.realms.multiplayerGate = {
 						
 						game.config.write("main");
 						
-						game.curRealm =
+						game.currentRealm =
 							game.realms.menu;
 						
 						break;
@@ -205,7 +205,7 @@ game.realms.multiplayerGate = {
 					textAlign: "center",
 					
 					string:
-						game.curLocale.gui_multiplayerGate_title,
+						game.currentLocale.gui_multiplayerGate_title,
 					
 					x: 160,
 					y: 22

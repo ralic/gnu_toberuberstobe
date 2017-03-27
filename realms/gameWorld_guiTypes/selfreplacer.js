@@ -31,8 +31,8 @@ game.realms.gameWorld.guiTypes.selfreplacer = {
 			return [null].concat(
 				Object.keys(
 					game.realms.gameWorld.objectTypes
-				).map(function(curValue) {
-					return new game.realms.gameWorld.objectTypes[curValue].New();
+				).map(function(currentValue) {
+					return new game.realms.gameWorld.objectTypes[currentValue].New();
 				})
 			);
 		},
@@ -44,7 +44,7 @@ game.realms.gameWorld.guiTypes.selfreplacer = {
 					case game.config.list.main.hotkeys.menu:
 						game.sounds.gui_click.play();
 						
-						game.realms.gameWorld.curGuiType =
+						game.realms.gameWorld.currentGuiType =
 							game.realms.gameWorld.guiTypes.default;
 						
 						break;
@@ -70,7 +70,7 @@ game.realms.gameWorld.guiTypes.selfreplacer = {
 							playerSelectedObject ||
 							{}
 						).type != "selfreplacer") {
-							game.realms.gameWorld.curGuiType =
+							game.realms.gameWorld.currentGuiType =
 								game.realms.gameWorld.guiTypes.default;
 							
 							break;
@@ -101,7 +101,7 @@ game.realms.gameWorld.guiTypes.selfreplacer = {
 							] = null;
 						}
 						
-						game.realms.gameWorld.curGuiType =
+						game.realms.gameWorld.currentGuiType =
 							game.realms.gameWorld.guiTypes.default;
 						
 						break;
@@ -176,7 +176,7 @@ game.realms.gameWorld.guiTypes.selfreplacer = {
 				playerSelectedObject ||
 				{}
 			).type != "selfreplacer") {
-				game.realms.gameWorld.curGuiType =
+				game.realms.gameWorld.currentGuiType =
 					game.realms.gameWorld.guiTypes.default;
 				
 				return [];
@@ -202,7 +202,7 @@ game.realms.gameWorld.guiTypes.selfreplacer = {
 					textAlign: "center",
 					
 					string:
-						game.curLocale.gui_gameWorld_selfreplacer_title,
+						game.currentLocale.gui_gameWorld_selfreplacer_title,
 					
 					x: 160,
 					y: 68
@@ -217,7 +217,7 @@ game.realms.gameWorld.guiTypes.selfreplacer = {
 					textAlign: "right",
 					
 					string:
-						game.curLocale.gui_settings_page +
+						game.currentLocale.gui_settings_page +
 						(this.data.selectedPage + 1) + "/" +
 						Math.ceil(this.allObjectTypes.length / 48),
 					
@@ -229,19 +229,19 @@ game.realms.gameWorld.guiTypes.selfreplacer = {
 			//Render all object types
 				for (var y = 0; y < 6; y++) {
 					for (var x = 0; x < 8; x++) {
-						var curObject =
+						var currentObject =
 							this.allObjectTypes[
 								this.data.selectedPage * 48 +
 								y * 8 + x
 							];
 						
-						if (curObject) {
+						if (currentObject) {
 							layer.push({
 								type: "sprite",
 								
 								texture: game.realms.gameWorld.objectTypes[
-									curObject.type
-								].textureOf(curObject),
+									currentObject.type
+								].textureOf(currentObject),
 								
 								x: 92 + x * 17,
 								y: 70 + y * 17,

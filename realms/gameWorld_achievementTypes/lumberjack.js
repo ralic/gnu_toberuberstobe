@@ -16,9 +16,9 @@ game.realms.gameWorld.achievementTypes.lumberjack = {
 	},
 	
 	get title() {
-		return game.curLocale.gui_gameWorld_achievements_lumberjack_title;
+		return game.currentLocale.gui_gameWorld_achievements_lumberjack_title;
 	},
 	get whatToDo() {
-		return game.curLocale.gui_gameWorld_achievements_lumberjack_whatToDo;
+		return game.currentLocale.gui_gameWorld_achievements_lumberjack_whatToDo;
 	}
 };

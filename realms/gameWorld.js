@@ -58,7 +58,7 @@ game.realms.gameWorld = {
 			));
 			game.config.write("gameWorld");
 			
-			game.curRealm =
+			game.currentRealm =
 				game.realms.gameOver;
 			
 			window.clearInterval(this.chunkUpdater);
@@ -76,19 +76,19 @@ game.realms.gameWorld = {
 						y < game.realms.gameWorld.chunkSize.height;
 						y++
 					) {
-						var curObject = game.config.list.gameWorld.objects[
+						var currentObject = game.config.list.gameWorld.objects[
 							game.config.list.gameWorld.cameraPosition.x + x
 						][
 							game.config.list.gameWorld.cameraPosition.y + y
 						];
 						
-						if (curObject) {
-							var curObjectType =
-								game.realms.gameWorld.objectTypes[curObject.type];
+						if (currentObject) {
+							var currentObjectType =
+								game.realms.gameWorld.objectTypes[currentObject.type];
 							
-							if (curObjectType.update) {
-								curObjectType.update(
-									curObject,
+							if (currentObjectType.update) {
+								currentObjectType.update(
+									currentObject,
 									
 									game.config.list.gameWorld.cameraPosition.x + x,
 									game.config.list.gameWorld.cameraPosition.y + y
@@ -113,16 +113,16 @@ game.realms.gameWorld = {
 						y < game.realms.gameWorld.chunkSize.height;
 						y++
 					) {
-						var curParticle = game.config.list.gameWorld.particles[
+						var currentParticle = game.config.list.gameWorld.particles[
 							game.config.list.gameWorld.cameraPosition.x + x
 						][
 							game.config.list.gameWorld.cameraPosition.y + y
 						];
 						
-						if (curParticle) {
-							curParticle.lifetime--;
+						if (currentParticle) {
+							currentParticle.lifetime--;
 							
-							if (curParticle.lifetime <= 0) {
+							if (currentParticle.lifetime <= 0) {
 								game.config.list.gameWorld.particles[
 									game.config.list.gameWorld.cameraPosition.x + x
 								][
@@ -135,13 +135,13 @@ game.realms.gameWorld = {
 		},
 		
 		update: function() {
-			this.curGuiType.handleHotkeys();
+			this.currentGuiType.handleHotkeys();
 			
 			return [
 				this.renderBackground(),
 				this.renderObjects(),
 				this.renderParticles(),
-				this.curGuiType.render()
+				this.currentGuiType.render()
 			];
 		},
 		
@@ -150,7 +150,7 @@ game.realms.gameWorld = {
 			
 			for (var y = 0; y < this.chunkSize.height; y++) {
 				for (var x = 0; x < this.chunkSize.width; x++) {
-					var curBackgroundTexture = this.backgroundTextures[
+					var currentBackgroundTexture = this.backgroundTextures[
 						game.config.list.gameWorld.background[
 							game.config.list.gameWorld.cameraPosition.x + x
 						][
@@ -158,12 +158,12 @@ game.realms.gameWorld = {
 						]
 					]();
 					
-					 if (curBackgroundTexture) {
+					 if (currentBackgroundTexture) {
 						layer.push({
 							type: "sprite",
 							
 							texture:
-								curBackgroundTexture,
+								currentBackgroundTexture,
 							
 							x: x * 16,
 							y: y * 16
@@ -179,25 +179,25 @@ game.realms.gameWorld = {
 			
 			for (var y = 0; y < this.chunkSize.height; y++) {
 				for (var x = 0; x < this.chunkSize.width; x++) {
-					var curObject = game.config.list.gameWorld.objects[
+					var currentObject = game.config.list.gameWorld.objects[
 						game.config.list.gameWorld.cameraPosition.x + x
 					][
 						game.config.list.gameWorld.cameraPosition.y + y
 					];
 					
-					if (curObject) {
+					if (currentObject) {
 						var 
-							curObjectType = this.objectTypes[curObject.type],
-							curObjectTexture = curObjectType.textureOf(curObject);
+							currentObjectType = this.objectTypes[currentObject.type],
+							currentObjectTexture = currentObjectType.textureOf(currentObject);
 						
 						layer.push({
 							type: "sprite",
 							
 							texture:
-								curObjectTexture,
+								currentObjectTexture,
 							
-							x: x * 16 + curObjectType.textureOffset.x,
-							y: y * 16 + curObjectType.textureOffset.y
+							x: x * 16 + currentObjectType.textureOffset.x,
+							y: y * 16 + currentObjectType.textureOffset.y
 						});
 					}
 				}
@@ -210,22 +210,22 @@ game.realms.gameWorld = {
 			
 			for (var y = 0; y < this.chunkSize.height; y++) {
 				for (var x = 0; x < this.chunkSize.width; x++) {
-					var curParticle = game.config.list.gameWorld.particles[
+					var currentParticle = game.config.list.gameWorld.particles[
 						game.config.list.gameWorld.cameraPosition.x + x
 					][
 						game.config.list.gameWorld.cameraPosition.y + y
 					];
 					
-					if (curParticle) {
-						var curParticleTexture = this.particleTypes[
-							curParticle.type
-						].textureOf(curParticle);
+					if (currentParticle) {
+						var currentParticleTexture = this.particleTypes[
+							currentParticle.type
+						].textureOf(currentParticle);
 						
 						layer.push({
 							type: "sprite",
 							
 							texture:
-								curParticleTexture,
+								currentParticleTexture,
 							
 							x: x * 16,
 							y: y * 16

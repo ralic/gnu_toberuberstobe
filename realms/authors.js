@@ -38,7 +38,7 @@ game.realms.authors = {
 					textAlign: "center",
 					
 					string:
-						game.curLocale.gui_authors_title,
+						game.currentLocale.gui_authors_title,
 					
 					x: 160,
 					y: 22
@@ -53,7 +53,7 @@ game.realms.authors = {
 					textAlign: "center",
 					
 					string:
-						game.curLocale.gui_authors_of +
+						game.currentLocale.gui_authors_of +
 						nw.App.manifest.name + " " +
 						nw.App.manifest.version,
 					
@@ -64,7 +64,7 @@ game.realms.authors = {
 			
 			for (
 				var i = 0;
-				i < game.curLocale.gui_authors_text.length;
+				i < game.currentLocale.gui_authors_text.length;
 				i++
 			) {
 				layers[0].push({
@@ -76,7 +76,7 @@ game.realms.authors = {
 					textAlign: "center",
 					
 					string:
-						game.curLocale.gui_authors_text[i],
+						game.currentLocale.gui_authors_text[i],
 					
 					x: 160,
 					y: 48 + i * 10
@@ -93,7 +93,7 @@ game.realms.authors = {
 				) {
 					game.sounds.gui_click.play();
 					
-					game.curRealm =
+					game.currentRealm =
 						game.realms.menu;
 				}
 			}

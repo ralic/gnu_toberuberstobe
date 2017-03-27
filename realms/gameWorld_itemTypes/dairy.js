@@ -14,7 +14,7 @@ game.realms.gameWorld.itemTypes.dairy = {
 	use: function() {
 		game.sounds.gui_click.play();
 		
-		game.realms.gameWorld.curGuiType =
+		game.realms.gameWorld.currentGuiType =
 			game.realms.gameWorld.guiTypes.dairy;
 	},
 	

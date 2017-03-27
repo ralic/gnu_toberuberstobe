@@ -17,10 +17,10 @@ game.realms.multiplayerWorld = {
 	//Methods
 		disconnect: function(errorMessage) {
 			if (
-				game.curRealm == game.realms.multiplayerGate ||
-				game.curRealm == this
+				game.currentRealm == game.realms.multiplayerGate ||
+				game.currentRealm == this
 			) {
-				game.curRealm =
+				game.currentRealm =
 					game.realms.menu;
 				
 				alert(

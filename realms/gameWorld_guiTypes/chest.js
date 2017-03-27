@@ -34,7 +34,7 @@ game.realms.gameWorld.guiTypes.chest = {
 					case game.config.list.main.hotkeys.menu:
 						game.sounds.gui_click.play();
 						
-						game.realms.gameWorld.curGuiType =
+						game.realms.gameWorld.currentGuiType =
 							game.realms.gameWorld.guiTypes.default;
 						
 						break;
@@ -60,7 +60,7 @@ game.realms.gameWorld.guiTypes.chest = {
 						).type == "chest") {
 							chestInventory = playerSelectedObject.inventory;
 						} else {
-							game.realms.gameWorld.curGuiType =
+							game.realms.gameWorld.currentGuiType =
 								game.realms.gameWorld.guiTypes.default;
 							
 							break;
@@ -170,7 +170,7 @@ game.realms.gameWorld.guiTypes.chest = {
 					textAlign: "center",
 					
 					string:
-						game.curLocale.gui_gameWorld_chest_title,
+						game.currentLocale.gui_gameWorld_chest_title,
 					
 					x: 160,
 					y: 12
@@ -184,7 +184,7 @@ game.realms.gameWorld.guiTypes.chest = {
 					textAlign: "center",
 					
 					string:
-						game.curLocale.gui_gameWorld_chest_inventory,
+						game.currentLocale.gui_gameWorld_chest_inventory,
 					
 					x: 160,
 					y: 123
@@ -213,7 +213,7 @@ game.realms.gameWorld.guiTypes.chest = {
 					).type == "chest") {
 						chestInventory = playerSelectedObject.inventory;
 					} else {
-						game.realms.gameWorld.curGuiType =
+						game.realms.gameWorld.currentGuiType =
 							game.realms.gameWorld.guiTypes.default;
 						
 						return [];
@@ -221,17 +221,17 @@ game.realms.gameWorld.guiTypes.chest = {
 				
 				for (var y = 0; y < 6; y++) {
 					for (var x = 0; x < 8; x++) {
-						var curItem = chestInventory[
+						var currentItem = chestInventory[
 							y * 8 + x
 						];
 						
-						if (curItem) {
+						if (currentItem) {
 							layer.push({
 								type: "sprite",
 								
 								texture: game.realms.gameWorld.itemTypes[
-									curItem.type
-								].textureOf(curItem),
+									currentItem.type
+								].textureOf(currentItem),
 								
 								x: 92 + x * 17,
 								y: 14 + y * 17
@@ -243,18 +243,18 @@ game.realms.gameWorld.guiTypes.chest = {
 			//Render player inventory
 				for (var y = 0; y < 6; y++) {
 					for (var x = 0; x < 8; x++) {
-						var curItem =
+						var currentItem =
 							game.realms.gameWorld.playerObject.inventory[
 								y * 8 + x
 							];
 						
-						if (curItem) {
+						if (currentItem) {
 							layer.push({
 								type: "sprite",
 								
 								texture: game.realms.gameWorld.itemTypes[
-									curItem.type
-								].textureOf(curItem),
+									currentItem.type
+								].textureOf(currentItem),
 								
 								x: 92 + x * 17,
 								y: 126 + y * 17

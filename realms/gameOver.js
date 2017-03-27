@@ -38,7 +38,7 @@ game.realms.gameOver = {
 					textAlign: "center",
 					
 					get string() {
-						return game.curLocale.gui_gameOver_title;
+						return game.currentLocale.gui_gameOver_title;
 					},
 					
 					x: 160,
@@ -54,7 +54,7 @@ game.realms.gameOver = {
 				) {
 					game.sounds.gui_click.play();
 					
-					game.curRealm =
+					game.currentRealm =
 						game.realms.menu;
 				}
 			}

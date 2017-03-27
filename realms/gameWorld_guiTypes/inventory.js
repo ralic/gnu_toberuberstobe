@@ -34,7 +34,7 @@ game.realms.gameWorld.guiTypes.inventory = {
 					case game.config.list.main.hotkeys.menu:
 						game.sounds.gui_click.play();
 						
-						game.realms.gameWorld.curGuiType =
+						game.realms.gameWorld.currentGuiType =
 							game.realms.gameWorld.guiTypes.default;
 						
 						break;
@@ -55,9 +55,9 @@ game.realms.gameWorld.guiTypes.inventory = {
 							];
 						} else {
 							var selectedForCraftingItemsTypes =
-								this.data.selectedForCraftingItems.map(function(curValue) {
+								this.data.selectedForCraftingItems.map(function(currentValue) {
 									return (game.realms.gameWorld.playerObject.inventory[
-										curValue.y * 8 + curValue.x
+										currentValue.y * 8 + currentValue.x
 									] || {type: null}).type;
 								}, this);
 							
@@ -193,7 +193,7 @@ game.realms.gameWorld.guiTypes.inventory = {
 					textAlign: "center",
 					
 					string:
-						game.curLocale.gui_gameWorld_inventory_title,
+						game.currentLocale.gui_gameWorld_inventory_title,
 					
 					x: 160,
 					y: 68
@@ -203,18 +203,18 @@ game.realms.gameWorld.guiTypes.inventory = {
 			//Render player inventory
 				for (var y = 0; y < 6; y++) {
 					for (var x = 0; x < 8; x++) {
-						var curItem =
+						var currentItem =
 							game.realms.gameWorld.playerObject.inventory[
 								y * 8 + x
 							];
 						
-						if (curItem) {
+						if (currentItem) {
 							layer.push({
 								type: "sprite",
 								
 								texture: game.realms.gameWorld.itemTypes[
-									curItem.type
-								].textureOf(curItem),
+									currentItem.type
+								].textureOf(currentItem),
 								
 								x: 92 + x * 17,
 								y: 70 + y * 17

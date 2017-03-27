@@ -177,7 +177,7 @@ game.realms.gameWorld.guiTypes.door = {
 					break;
 			}
 			
-			game.realms.gameWorld.curGuiType =
+			game.realms.gameWorld.currentGuiType =
 				game.realms.gameWorld.guiTypes.default;
 			
 			return [];

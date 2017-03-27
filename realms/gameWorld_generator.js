@@ -44,15 +44,15 @@ game.realms.gameWorld.generator = {
 							x1 = Math.floor(x / 100),
 							y1 = Math.floor(y / 100),
 							
-							curBiome = game.realms.gameWorld.biomeTypes[
+							currentBiome = game.realms.gameWorld.biomeTypes[
 								gameWorld.biomes[x1][y1]
 							];
 						
 						gameWorld.background[x][y] =
-							curBiome.backgroundTextures[
+							currentBiome.backgroundTextures[
 								Math.floor(
 									Math.random() *
-									curBiome.backgroundTextures.length
+									currentBiome.backgroundTextures.length
 								)
 							];
 					}
@@ -67,17 +67,17 @@ game.realms.gameWorld.generator = {
 							x1 = Math.floor(x / 100),
 							y1 = Math.floor(y / 100),
 							
-							curBiome = game.realms.gameWorld.biomeTypes[
+							currentBiome = game.realms.gameWorld.biomeTypes[
 								gameWorld.biomes[x1][y1]
 							];
 						
-						for (var i in curBiome.objectTypes) {
+						for (var i in currentBiome.objectTypes) {
 							if (
 								Math.random() <
-									curBiome.objectTypes[i].chance
+									currentBiome.objectTypes[i].chance
 							) {
 								gameWorld.objects[x][y] = new
-									curBiome.objectTypes[
+									currentBiome.objectTypes[
 										i
 									].constructor();
 								
@@ -152,30 +152,30 @@ game.realms.gameWorld.generator = {
 		spawnMobs: function(gameWorld) {
 			if (gameWorld.spawnedMobsCount < gameWorld.size) {
 				var
-					curObjectPosition = {
+					currentObjectPosition = {
 						x: Math.floor(Math.random() * gameWorld.size),
 						y: Math.floor(Math.random() * gameWorld.size)
 					},
 					
 					spawningMobs = game.realms.gameWorld.biomeTypes[
 						gameWorld.biomes[
-							Math.floor(curObjectPosition.x / 100)
+							Math.floor(currentObjectPosition.x / 100)
 						][
-							Math.floor(curObjectPosition.y / 100)
+							Math.floor(currentObjectPosition.y / 100)
 						]
 					].spawningMobs;
 				
 				if (!gameWorld.objects[
-					curObjectPosition.x
+					currentObjectPosition.x
 				][
-					curObjectPosition.y
+					currentObjectPosition.y
 				]) {
 					for (var i in spawningMobs) {
 						if (Math.random() < spawningMobs[i].chance) {
 							gameWorld.objects[
-								curObjectPosition.x
+								currentObjectPosition.x
 							][
-								curObjectPosition.y
+								currentObjectPosition.y
 							] = new spawningMobs[i].constructor();
 							
 							break;

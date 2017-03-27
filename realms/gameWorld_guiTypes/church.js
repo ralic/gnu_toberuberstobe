@@ -20,7 +20,7 @@ game.realms.gameWorld.guiTypes.church = {
 				
 				description: {
 					get text() {
-						return game.curLocale.gui_gameWorld_church_thirst;
+						return game.currentLocale.gui_gameWorld_church_thirst;
 					},
 					
 					x: 34,
@@ -42,7 +42,7 @@ game.realms.gameWorld.guiTypes.church = {
 				
 				description: {
 					get text() {
-						return game.curLocale.gui_gameWorld_church_health;
+						return game.currentLocale.gui_gameWorld_church_health;
 					},
 					
 					x: 161,
@@ -64,7 +64,7 @@ game.realms.gameWorld.guiTypes.church = {
 				
 				description: {
 					get text() {
-						return game.curLocale.gui_gameWorld_church_hunger;
+						return game.currentLocale.gui_gameWorld_church_hunger;
 					},
 					
 					x: 273,
@@ -93,7 +93,7 @@ game.realms.gameWorld.guiTypes.church = {
 					case game.config.list.main.hotkeys.menu:
 						game.sounds.gui_click.play();
 						
-						game.realms.gameWorld.curGuiType =
+						game.realms.gameWorld.currentGuiType =
 							game.realms.gameWorld.guiTypes.default;
 						
 						break;
@@ -152,7 +152,7 @@ game.realms.gameWorld.guiTypes.church = {
 				playerSelectedObject ||
 				{}
 			).type != "church") {
-				game.realms.gameWorld.curGuiType =
+				game.realms.gameWorld.currentGuiType =
 					game.realms.gameWorld.guiTypes.default;
 				
 				return [];

@@ -16,9 +16,9 @@ game.realms.gameWorld.achievementTypes.terminator = {
 	},
 	
 	get title() {
-		return game.curLocale.gui_gameWorld_achievements_terminator_title;
+		return game.currentLocale.gui_gameWorld_achievements_terminator_title;
 	},
 	get whatToDo() {
-		return game.curLocale.gui_gameWorld_achievements_terminator_whatToDo;
+		return game.currentLocale.gui_gameWorld_achievements_terminator_whatToDo;
 	}
 };

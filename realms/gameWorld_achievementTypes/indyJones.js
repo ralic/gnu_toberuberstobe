@@ -16,9 +16,9 @@ game.realms.gameWorld.achievementTypes.indyJones = {
 	},
 	
 	get title() {
-		return game.curLocale.gui_gameWorld_achievements_indyJones_title;
+		return game.currentLocale.gui_gameWorld_achievements_indyJones_title;
 	},
 	get whatToDo() {
-		return game.curLocale.gui_gameWorld_achievements_indyJones_whatToDo;
+		return game.currentLocale.gui_gameWorld_achievements_indyJones_whatToDo;
 	}
 };

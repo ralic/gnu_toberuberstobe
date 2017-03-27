@@ -29,9 +29,9 @@ game.contentFolders = [
 
 game.loadContent = function() {
 	for (var i = 0; i < this.contentFolders.length; i++) {
-		var curFolderContents = [];
+		var currentFolderContents = [];
 		try {
-			curFolderContents = fs.readdirSync(
+			currentFolderContents = fs.readdirSync(
 				this.contentFolders[i]
 			).filter(function(fileName) {
 				if (fileName.indexOf(".js") + 1) {
@@ -49,17 +49,17 @@ game.loadContent = function() {
 			));
 		}
 		
-		for (var j = 0; j < curFolderContents.length; j++) {
+		for (var j = 0; j < currentFolderContents.length; j++) {
 			try {
 				new Function("", fs.readFileSync(
 					this.contentFolders[i] +
-					curFolderContents[j],
+					currentFolderContents[j],
 				"utf-8"))();
 			} catch(e) {
 				alert(new ReferenceError(
 					"can't load script " +
 					this.contentFolders[i] +
-					curFolderContents[j] +
+					currentFolderContents[j] +
 					
 					" (" + e + ")"
 				));

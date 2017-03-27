@@ -60,17 +60,17 @@ game.config = {
 			));
 			
 			for (var i in this.list) {
-				var curConfig = "";
+				var currentConfig = "";
 				try {
-					curConfig = fs.readFileSync(
+					currentConfig = fs.readFileSync(
 						this.pathPrefix +
 						this.paths[i],
 					"utf-8");
 				} catch(e) {}
 				
-				if (curConfig) {
+				if (currentConfig) {
 					try {
-						this.list[i] = JSON.parse(curConfig);
+						this.list[i] = JSON.parse(currentConfig);
 					} catch(e) {
 						alert(new ReferenceError(
 							"can't read config " +

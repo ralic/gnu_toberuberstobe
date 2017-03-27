@@ -16,9 +16,9 @@ game.realms.gameWorld.achievementTypes.food = {
 	},
 	
 	get title() {
-		return game.curLocale.gui_gameWorld_achievements_food_title;
+		return game.currentLocale.gui_gameWorld_achievements_food_title;
 	},
 	get whatToDo() {
-		return game.curLocale.gui_gameWorld_achievements_food_whatToDo;
+		return game.currentLocale.gui_gameWorld_achievements_food_whatToDo;
 	}
 };

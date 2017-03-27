@@ -28,7 +28,7 @@ var
 			colorScheme: {},
 			
 			locales: {},
-			get curLocale() {
+			get currentLocale() {
 				return this.locales[
 					this.config.list.main.locale
 				] || this.locales[
@@ -66,7 +66,7 @@ var
 					
 					document.getElementById("loadingScreen").remove();
 					
-					game.curRealm =
+					game.currentRealm =
 						game.realms.menu;
 					
 					game.renderer = window.setInterval(game.update, 4);
@@ -74,7 +74,7 @@ var
 			},
 			
 			update: function() {
-				var layers = game.curRealm.update();
+				var layers = game.currentRealm.update();
 				
 				game.canvasContext.clearRect(
 					0,

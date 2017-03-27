@@ -24,7 +24,7 @@ game.realms.gameWorld.guiTypes.default = {
 						
 						game.config.write("gameWorld");
 						
-						game.curRealm =
+						game.currentRealm =
 							game.realms.menu;
 						
 						window.clearInterval(game.realms.gameWorld.chunkUpdater);
@@ -59,7 +59,7 @@ game.realms.gameWorld.guiTypes.default = {
 								selectedPoint.y
 							];
 						
-						game.realms.gameWorld.curGuiType =
+						game.realms.gameWorld.currentGuiType =
 							game.realms.gameWorld.objectTypes[(
 								selectedObject ||
 								game.realms.gameWorld.playerObject
@@ -71,10 +71,10 @@ game.realms.gameWorld.guiTypes.default = {
 						if (
 							game.realms.gameWorld.playerObject.isGod &&
 							
-							game.realms.gameWorld.curGuiType ==
+							game.realms.gameWorld.currentGuiType ==
 								game.realms.gameWorld.guiTypes.inventory
 						) {
-							game.realms.gameWorld.curGuiType =
+							game.realms.gameWorld.currentGuiType =
 								game.realms.gameWorld.guiTypes.godInventory;
 						}
 						
@@ -350,7 +350,7 @@ game.realms.gameWorld.guiTypes.default = {
 						
 						string: [
 							game.realms.gameWorld.playerObject.experience,
-							game.curLocale.gui_gameWorld_default_godMode
+							game.currentLocale.gui_gameWorld_default_godMode
 						][+game.realms.gameWorld.playerObject.isGod],
 						
 						x: 17,

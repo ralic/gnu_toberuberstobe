@@ -33,8 +33,8 @@ game.realms.gameWorld.guiTypes.godInventory = {
 			return [null].concat(
 				Object.keys(
 					game.realms.gameWorld.itemTypes
-				).map(function(curValue) {
-					return new game.realms.gameWorld.itemTypes[curValue].New();
+				).map(function(currentValue) {
+					return new game.realms.gameWorld.itemTypes[currentValue].New();
 				})
 			);
 		},
@@ -46,7 +46,7 @@ game.realms.gameWorld.guiTypes.godInventory = {
 					case game.config.list.main.hotkeys.menu:
 						game.sounds.gui_click.play();
 						
-						game.realms.gameWorld.curGuiType =
+						game.realms.gameWorld.currentGuiType =
 							game.realms.gameWorld.guiTypes.default;
 						
 						break;
@@ -191,7 +191,7 @@ game.realms.gameWorld.guiTypes.godInventory = {
 					textAlign: "center",
 					
 					string:
-						game.curLocale.gui_gameWorld_godInventory_title,
+						game.currentLocale.gui_gameWorld_godInventory_title,
 					
 					x: 160,
 					y: 12
@@ -205,7 +205,7 @@ game.realms.gameWorld.guiTypes.godInventory = {
 					textAlign: "center",
 					
 					string:
-						game.curLocale.gui_gameWorld_godInventory_allItems,
+						game.currentLocale.gui_gameWorld_godInventory_allItems,
 					
 					x: 160,
 					y: 123
@@ -220,7 +220,7 @@ game.realms.gameWorld.guiTypes.godInventory = {
 					textAlign: "right",
 					
 					string:
-						game.curLocale.gui_settings_page +
+						game.currentLocale.gui_settings_page +
 						(this.data.selectedPage + 1) + "/" +
 						Math.ceil(this.allItemTypes.length / 48),
 					
@@ -232,18 +232,18 @@ game.realms.gameWorld.guiTypes.godInventory = {
 			//Render all item types
 				for (var y = 0; y < 6; y++) {
 					for (var x = 0; x < 8; x++) {
-						var curItem = this.allItemTypes[
+						var currentItem = this.allItemTypes[
 							this.data.selectedPage * 48 +
 							y * 8 + x
 						];
 						
-						if (curItem) {
+						if (currentItem) {
 							layer.push({
 								type: "sprite",
 								
 								texture: game.realms.gameWorld.itemTypes[
-									curItem.type
-								].textureOf(curItem),
+									currentItem.type
+								].textureOf(currentItem),
 								
 								x: 92 + x * 17,
 								y: 14 + y * 17
@@ -255,18 +255,18 @@ game.realms.gameWorld.guiTypes.godInventory = {
 			//Render player inventory
 				for (var y = 0; y < 6; y++) {
 					for (var x = 0; x < 8; x++) {
-						var curItem =
+						var currentItem =
 							game.realms.gameWorld.playerObject.inventory[
 								y * 8 + x
 							];
 						
-						if (curItem) {
+						if (currentItem) {
 							layer.push({
 								type: "sprite",
 								
 								texture: game.realms.gameWorld.itemTypes[
-									curItem.type
-								].textureOf(curItem),
+									currentItem.type
+								].textureOf(currentItem),
 								
 								x: 92 + x * 17,
 								y: 126 + y * 17

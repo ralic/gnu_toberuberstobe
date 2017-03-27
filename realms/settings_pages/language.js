@@ -15,7 +15,7 @@ game.realms.settings.controls.push([
 		type: "text",
 		
 		get string() {
-			return game.curLocale.gui_settings_language_title;
+			return game.currentLocale.gui_settings_language_title;
 		},
 		
 		x: 160,
