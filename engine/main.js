@@ -40,7 +40,7 @@ var
 		
 		//Methods
 			init: function() {
-				this.loadContent();
+				this.loadScripts();
 				
 				this.config.read();
 				

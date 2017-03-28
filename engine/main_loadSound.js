@@ -1,5 +1,5 @@
 /*
- * Main module sounds loading part
+ * Main module sound loading part
  * Copyright 2016, 2017 William Lupshenko
  * 
  * This file is a part of ToberUberStobe

@@ -1,5 +1,5 @@
 /*
- * Main module content content loading part
+ * Main module scripts loading part
  * Copyright 2016, 2017 William Lupshenko
  * 
  * This file is a part of ToberUberStobe
@@ -10,7 +10,7 @@
  * (at your option) any later version
  */
 
-game.contentFolders = [
+game.foldersWithScripts = [
 	"engine/main_addons/",
 	
 	"locales/",
@@ -27,12 +27,12 @@ game.contentFolders = [
 		"realms/gameWorld_achievementTypes/"
 ];
 
-game.loadContent = function() {
-	for (var i = 0; i < this.contentFolders.length; i++) {
+game.loadScripts = function() {
+	for (var i = 0; i < this.foldersWithScripts.length; i++) {
 		var currentFolderContents = [];
 		try {
 			currentFolderContents = fs.readdirSync(
-				this.contentFolders[i]
+				this.foldersWithScripts[i]
 			).filter(function(fileName) {
 				if (fileName.indexOf(".js") + 1) {
 					return true;
@@ -43,7 +43,7 @@ game.loadContent = function() {
 		} catch(e) {
 			alert(new ReferenceError(
 				"can't load content folder " +
-				this.contentFolders[i] +
+				this.foldersWithScripts[i] +
 				
 				" (" + e + ")"
 			));
@@ -52,13 +52,13 @@ game.loadContent = function() {
 		for (var j = 0; j < currentFolderContents.length; j++) {
 			try {
 				new Function("", fs.readFileSync(
-					this.contentFolders[i] +
+					this.foldersWithScripts[i] +
 					currentFolderContents[j],
 				"utf-8"))();
 			} catch(e) {
 				alert(new ReferenceError(
 					"can't load script " +
-					this.contentFolders[i] +
+					this.foldersWithScripts[i] +
 					currentFolderContents[j] +
 					
 					" (" + e + ")"
